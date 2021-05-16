@@ -29,7 +29,7 @@ def search(request):
     query=request.GET.get('q')
 
     result=Post.objects.filter(Q(title__icontains=query) | Q(author__username__icontains=query) | Q(content__icontains=query))
-    paginate_by=2
+    paginate_by=5
     context={ 'posts':result }
     return render(request,template,context)
    
