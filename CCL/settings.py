@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-6lc+holzn7%6t0=_sf!@^ext1#rei=7hg7yf#p9p!^j=ge_32%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['cloud-file-upload-and-download.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['cloud-file-upload-and-download.herokuapp.com','127.0.0.1:8080']
 
 
 # Application definition
