@@ -27,6 +27,7 @@ SECRET_KEY = 'django-insecure-6lc+holzn7%6t0=_sf!@^ext1#rei=7hg7yf#p9p!^j=ge_32%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
+#ALLOWED_HOSTS = ['cloud-file-upload-and-download.herokuapp.com','127.0.0.1:8000']
 ALLOWED_HOSTS = ['cloud-file-upload-and-download.herokuapp.com','127.0.0.1:8000']
 
 
@@ -123,8 +124,8 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
-STATIC_ROOT= os.path.join(BASE_DIR, 'static'),
-STATIC_URL = '/static/'
+STATIC_ROOT= os.path.join(BASE_DIR, 'blog/static'),
+STATIC_URL = 'blog/static/'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
